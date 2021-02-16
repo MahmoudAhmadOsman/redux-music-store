@@ -1,27 +1,39 @@
 import { combineReducers } from "redux";
-//2
+//2nd step
 //2: Reducers
 
 //Write down here all the reducers you need for your project,
 //then export so that they can be used anywhere in your project
-const songReducer = () => {
+const songsReducer = () => {
   //Return an array of objects that represents different songs [static array]
   return [
     {
+      id: "1",
       title: "You are the king",
       duration: "5:05",
+      author: "Jame King",
+      image: "/images/music-player.png",
     },
     {
+      id: "2",
       title: "Love is one",
       duration: "4:03",
+      author: "Larry Morphin",
+      image: "/images/music-player.png",
     },
     {
+      id: "3",
       title: "Me and you",
       duration: "6:09",
+      author: "Sarah Lews",
+      image: "/images/music-player.png",
     },
     {
+      id: "4",
       title: "My world is coding",
       duration: "3:01",
+      author: "Aston Ferry",
+      image: "/images/music-player.png",
     },
   ];
 };
@@ -33,7 +45,6 @@ const selectedSongReducer = (selectedSong = null, action) => {
     //if that is the case, then return the payload which is also inside action/index.js
     return action.payload;
   }
-
   //If the action is not equal to SONG_SELECTED
   //then return whatevern the selected song is
   return selectedSong;
@@ -44,7 +55,7 @@ const selectedSongReducer = (selectedSong = null, action) => {
 export default combineReducers({
   //The key of these objects are the keys that show up inside the state object
   //key:value
-  song: songReducer,
+  songs: songsReducer,
   selectedSong: selectedSongReducer,
 });
 
