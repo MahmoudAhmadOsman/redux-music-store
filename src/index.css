@@ -5,6 +5,26 @@
 
 }
 
+
+
+
+
+
+
+.all-song-list {
+  background-color: rgb(238, 238, 238);
+  width: 500px;
+  height: 99vh;
+  margin: auto;
+  overflow-x: hidden;
+  padding: 20px 30px;
+  box-shadow: inset -6px -6px 12px rgba(0, 0, 0, 0.8), inset 6px 6px 12px rgba(255, 255, 255, 0.4);
+  -webkit-box-shadow: inset -6px -6px 12px rgba(0, 0, 0, 0.8), inset 6px 6px 12px rgba(255, 255, 255, 0.4);
+  -moz-box-shadow: inset -6px -6px 12px rgba(0, 0, 0, 0.8), inset 6px 6px 12px rgba(255, 255, 255, 0.4);
+  -ms-box-shadow: inset -6px -6px 12px rgba(0, 0, 0, 0.8), inset 6px 6px 12px rgba(255, 255, 255, 0.4);
+  -o-box-shadow: inset -6px -6px 12px rgba(0, 0, 0, 0.8), inset 6px 6px 12px rgba(255, 255, 255, 0.4);
+}
+
 .songs-list {
   position: relative;
 }
@@ -12,10 +32,17 @@
 .songs-list img {
   width: 55px;
   height: 55px;
- 
-     opacity: 0.3; 
- 
+  opacity: 0.3;
+
 
 }
 
- 
+
+/* Footer */
+.footer{
+  width: 100%;
+  height: auto;
+  margin-top: 100%;
+   font-size: 11px;
+   text-align: center;
+}

@@ -39,6 +39,8 @@ const songsReducer = () => {
 };
 
 //2nd Reducer
+//const initialState = {};
+// const selectedSongReducer = (selectedSong = initialState, action)
 const selectedSongReducer = (selectedSong = null, action) => {
   //Now, check the type of action. This type of action is inside action/index.js
   if (action.type === "SONG_SELECTED") {
