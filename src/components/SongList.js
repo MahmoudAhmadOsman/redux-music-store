@@ -34,7 +34,7 @@ class SongList extends Component {
   }
 }
 
-//Create a fun that retuns the original state
+//Create a func that retuns the original state
 //state = get all the data inside redux store
 const mapStateToProps = (state) => {
   //console.log(state);
