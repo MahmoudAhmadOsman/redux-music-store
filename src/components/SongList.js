@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { selectSong } from "../actions";
-import SongDetails from "./SongDetails";
+// import SongDetails from "./SongDetails";
 class SongList extends Component {
   renderList() {
     return this.props.songs.map((song) => {
